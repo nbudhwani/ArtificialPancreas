@@ -1,0 +1,1 @@
+curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd --mail-from 'noah123body@gmail.com' --mail-rcpt 'noah123body@gmail.com' --upload-file base/email/emergency_email.txt --user 'noah123body@gmail.com:pass123word'

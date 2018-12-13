@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+
+\graphicspath{ {../} }
+
+\newcommand{\missingText}{\emph{*MISSING*}}
+
+\providecommand{\patientName}{\missingText}
+\providecommand{\patientSex}{\missingText}
+\providecommand{\patientHeight}{\missingText}
+\providecommand{\patientWeight}{\missingText}
+\providecommand{\patientBMI}{\missingText}
+
+%\newcommand{\noRecommendation}{We have no reccomendation based on this information.}
+%\providecommand{\patientReccomendation}{\noRecommendation}
+
+\providecommand{\patientGlucoseGraph}{}
+\providecommand{\patientInsulinGraph}{}
+
+\title{Patient Glucose Report}
+\author{}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+
+    \begin{tabular}{llllll}
+        \textbf{Name: }&\patientName&
+        \textbf{Age: }&\patientAge&
+        \textbf{Sex: }&\patientSex
+    \end{tabular}
+    
+
+    \section{Glucose Readings:}
+    \patientName{'s} glucose readings from the last week:
+    
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=\linewidth]{\patientGlucoseGraph}
+    \end{figure}
+    
+    {\section{Insuliun Readings:}
+    \patientName{'s} Insulin doses during the last week.
+    
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=\linewidth]{\patientInsulinGraph}
+    \end{figure}}
+    
+    %\patientReccomendation
+\end{document}

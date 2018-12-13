@@ -1,0 +1,4 @@
+In order to compile project files, type "make all".
++	If you are compiling for testing purposes, try "make all -i" so that broken files do not cause compilation to halt.
++	Make tests with the command "make tests", then "make runtests" to run them. (Warning, some tests require user input.)
+
